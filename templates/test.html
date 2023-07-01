@@ -9,20 +9,5 @@
   <textarea form="form1" class="entr" name="entr" rows="30" cols="50" placeholder="Please enter your string">{{ string }}</textarea>
   <input type="submit" form="form1" value="Send">
 </form>
-<button onclick="sendString()">Send</button>
 </body>
-<script>
-async function sendString() {
-  //alert("prestart");
-  let url = "http://127.0.0.1:5000/send";
-  let str = document.querySelector(".entr").value;
-  alert(str);
-  let resp = await fetch(url, {method: "POST", body: str});
-  if(resp.ok){
-  alert(resp.json());
-  }
-  else{alert("else");}
-  alert("fin");
-}
-</script>
 </html>
