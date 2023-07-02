@@ -39,26 +39,17 @@ if __name__ == '__main__':
     print(total_frames)
     # Генерируем видео
     text_width, text_height = cv2.getTextSize(text, font, font_scale, 1)[0]
-    x = 0#(100 - text_width) // 2
+    x = 0
     y = (100 + text_height) // 2
     for frame_number in range(total_frames):
         # Очищаем изображение
         image.fill(0)
 
-        # Вычисляем позицию бегущей строки на текущем кадре
-       # print(text_width, 100 - text_width, (100-text_width) // 2)
-
-        print(x, y)
-       # print(frame_number, text_width, text_width/total_frames)
-
-        # Рисуем текст на изображении
+        # Drawing text into video and pushing it into existing video
         cv2.putText(image, text, (x, y), font, font_scale, font_color, 1, line_type)
-
-        # Записываем кадр в видео
         video_writer.write(image)
 
         x-=text_width//total_frames
-    # Закрываем объект записи видео
     video_writer.release()
     app.run(debug=True)
     print("!")
