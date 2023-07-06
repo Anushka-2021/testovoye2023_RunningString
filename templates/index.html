@@ -6,14 +6,9 @@
 </head>
 <body>
 <p>Please enter your string</p>
-<textarea class="entr" name="entr" rows="30" cols="50" placeholder="Please enter your string">{{ string }}</textarea>
-<button onclick="sending()">Send</button>
+<form method="post" id="form1">
+    <textarea form="form1" class="entr" name="entr" rows="30" cols="50" placeholder="Please enter your string">{{ string }}</textarea>
+    <input type="submit" form="form1" value="Download">
+</form>
 </body>
-<script>
-    async function sending() {
-      let url = 'http://127.0.0.1:5000/file';
-      let str = document.querySelector(".entr").value;
-      window.location.href = url + str;
-    }
-</script>
 </html>
