@@ -77,8 +77,7 @@ def down_page():
         total_frames = fps * video_length
         # Video creation
         fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-        video_writer = cv2.VideoWriter('/templates/files/running_text.mp4', fourcc, fps, (100, 100))
-        print("w")
+        video_writer = cv2.VideoWriter('static/running_text.mp4', fourcc, fps, (100, 100))
         text_width, text_height = cv2.getTextSize(text, font, font_scale, 1)[0]
         x = 100
         y = 50
