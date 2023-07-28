@@ -1,0 +1,11 @@
+form {
+      width: 90%;
+      padding: 20px;
+      border-radius: 5px;
+    }
+body {
+      background-color: #accccc;
+    }
+textarea {
+      width: 100%;
+    }
