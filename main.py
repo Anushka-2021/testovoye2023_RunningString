@@ -10,7 +10,7 @@ cursor = conn.cursor()
 
 @app.route('/', methods = ['POST', 'GET'])
 def index():
-    return render_template("test.html")
+    return render_template("index.html")
 
 @app.route('/down_page', methods = ['POST', 'GET'])
 def downloading():
@@ -47,8 +47,8 @@ def downloading():
         # Adding into database
         f = list(cursor.execute("SELECT count(*) FROM myStrings1"))[0][0]
         cursor.execute("INSERT OR REPLACE INTO myStrings1(string_body, time_of_sending) VALUES (?, ?)", (text, datetime.now()))
-        return render_template("download.html")
-    return render_template("index.html")
+        return render_template("download2.html")
+    return render_template("download1.html")
 
 @app.route('/save_page', methods = ['POST', 'GET'])
 def saving():

@@ -2,30 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Running_string</title>
-    <style type="text/css">
-    form {
-      width: 90%;
-      padding: 20px;
-      border-radius: 5px;
-    }
-    body {
-      background-color: #accccc;
-    }
-    textarea {
-      width: 100%;
-    }
-  </style>
+    <title>Saving</title>
+    <link rel="stylesheet" href="/static/style.css"/>
 </head>
 <body>
 <form method="post" id="form1">
     <textarea form="form1" class="entr" name="entr" rows="10" placeholder="Please enter your string">{{ string }}</textarea>
-    <p>Please enter directory to save file and file name</p>
-    <input type="text" form="form1" name="path" placeholder="C:/running_strings">
-    <input type="text" form="form1" name="name" placeholder="running_text">
-    <input type="submit" form="form1" value="Send">
+    <p>Please enter directory to save file and filename</p>
+    <input type="text" class="input_text" form="form1" name="path" placeholder="C:/running_strings">
+    <input type="text" class="input_text" form="form1" name="name" placeholder="running_text">
+    <input type="submit" class="but_download" form="form1" value="Send">
 </form>
-<button onclick="window.location.href = window.location.origin + '/down_page';">Watch file</button>
-
 </body>
 </html>

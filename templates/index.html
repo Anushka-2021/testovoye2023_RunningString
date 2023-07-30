@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Enter page</title>
-    <link rel="stylesheet" type="text/css" htef="../style.css">
+  <meta charset="utf-8" />
+  <title>Running_string</title>
+  <link rel="stylesheet" href="/static/style.css"/>
 </head>
 <body>
-<p>Please enter your string</p>
-<form method="post" id="form1">
-    <textarea form="form1" class="entr" name="entr" rows="30" cols="50" placeholder="Please enter your string">{{ string }}</textarea>
-    <input type="submit" form="form1" value="Download">
-</form>
+<button class="but_download" onclick="window.location.href = window.location.origin + '/down_page';">Download file</button>
+<button class="but_download" onclick="window.location.href = window.location.origin + '/save_page';">Save file</button>
 </body>
 </html>

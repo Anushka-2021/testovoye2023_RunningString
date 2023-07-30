@@ -1,5 +1,5 @@
 form {
-      width: 90%;
+      width: 80%;
       padding: 20px;
       border-radius: 5px;
     }
@@ -8,4 +8,46 @@ body {
     }
 textarea {
       width: 100%;
+      border-radius: 30px;
+      padding: 20px;
+      margin: 10px;
     }
+textarea:focus {
+    outline: none;
+}
+input, button {
+    margin: 10px;
+}
+.but_download, button{
+    width: 150px;
+    height: 40px;
+    border-color: #ccb7cc;
+    border-width: 5px;
+    border-radius: 30px;
+}
+.but_watch{
+    margin: 10px;
+}
+.input_text{
+    height: 20px;
+    border-radius: 12px;
+    padding: 5px;
+}
+.input_text:focus {
+    outline: none;
+}
+.vid{
+    padding: 40px;
+}
+.vid_a{
+    border: solid;
+    border-radius: 20px;
+    border-color: #cc97cc;
+    margin: 20px;
+    padding: 15px;
+    background-color: #ccb7cc;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
